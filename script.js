@@ -29,6 +29,8 @@ keys.addEventListener('click', e => {
             action === 'divide'
         ) {
             key.classList.add('is-depressed');
+            Array.from(key.parentNode.children)
+            .forEach(k => k.classList.remove('is-depressed'))
             calculator.dataset.previousKeyType = 'operator'
             calculator.dataset.firstValue = displayedNum
             calculator.dataset.operator = action
@@ -46,12 +48,13 @@ keys.addEventListener('click', e => {
             calculator.dataset.firstValue = ''
             calculator.dataset.previousKeyType = ''
             calculator.dataset.operator = ''
+            display.textContent = ""
         }
 
     }
 })
 
-const calculate= (n1, operator, n2) => {
+const calculate = (n1, operator, n2) => {
     let result = ''
   
     if (operator === 'add') {
