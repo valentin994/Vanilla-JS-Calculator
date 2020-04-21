@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="calculator">
+                    <div class="wrap">
+                        <div class="display">
+                        </div>
+                    </div>
+                    <div class="keys">
+                        <div class="firstrow">
+                            <div class="operator-column"><button class="key--operator" data-action="add">+</button>
+                            </div>
+                            <div class="operator-column"><button class="key--operator" data-action="subtract">-</button>
+                            </div>
+                            <div class="operator-column"><button class="key--operator"
+                                    data-action="multiply">&times;</button></div>
+                            <div class="operator-column"><button class="key--operator"
+                                    data-action="divide">&divide;</button></div>
+                        </div>
+                        <div class="number-keys">
+                            <div class="grid">
+                                <div class="grid-item"><button>7</button></div>
+                                <div class="grid-item"><button>8</button></div>
+                                <div class="grid-item"><button>9</button></div>
+                                <div class="grid-item"><button>4</button></div>
+                                <div class="grid-item"><button>5</button></div>
+                                <div class="grid-item"><button>6</button></div>
+                                <div class="grid-item"><button>3</button></div>
+                                <div class="grid-item"><button>2</button></div>
+                                <div class="grid-item"><button>1</button></div>
+                                <div class="grid-item"><button>0</button></div>
+                                <div class="grid-item"><button data-action="decimal">.</button></div>
+                                <div class="grid-item"><button data-action="clear">AC</button></div>
+                            </div>
+                            <div class="equal"><button data-action="calculate">=</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
